@@ -1,0 +1,127 @@
+      body {
+        margin-left: 220px;
+        margin-right: 220px;
+        background-color: white;
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .col-md-6.order-3 {
+        position: sticky;
+        top: 30px;
+        height: 100vh;
+      }
+
+      .card {
+        border: none;
+        margin-bottom: 15px;
+      }
+
+      .form-control {
+        height: 50px;
+        border: 2px solid #eee;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .form-control:focus {
+        border-color: #039be5;
+        box-shadow: none;
+      }
+
+      .logo {
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .card-footer {
+        background-color: #f8f9fa;
+        font-weight: bold;
+      }
+
+      .btn-primary {
+        background-color: #89cff0;
+        color:#333;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #61c6f5;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: #1565c0;
+        background-color: #e3f2fd;
+      }
+
+      .certificate-text {
+        font-size: 14px;
+        color: #777;
+      }
+      .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item h6 {
+            margin: 0;
+        }
+        .cart-item .price {
+            font-weight: bold;
+        }
+        .total-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .custom-box {
+          background-color: #cccccc;
+          color: #333;
+        }
+        
+        /* Style for the header */
+      .header {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: white /* Optional background color */
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+
+      /* Back button styling */
+      .back-button {
+        background-color: #89cff0; /* Button color */
+        color: white; /* Text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px; /* Spacing between the button and the logo */
+      }
+
+      /* Logo styling */
+      .logo {
+        height: 50px; /* Adjust the logo height as needed */
+        object-fit: contain;
+      }
+
+      .divider
+      {
+          margin: 30px 0; /* Space between sections */
+          border: none; /* Remove default border styles */
+          border-top: 1px solid #333; /* Add the top border as a line */ 
+      }

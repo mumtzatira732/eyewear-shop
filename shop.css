@@ -1,0 +1,605 @@
+body 
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #fff8dc;
+    margin:1px;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #89cff0;
+    color: #fff8dc;
+    height: 50px ;
+    font-size: 30px;
+}
+
+.navigate{
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center; 
+    background-color: #89cff0;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px 0;
+    background-color:#89cff0;
+    color: black;
+    width: 100%;
+    width: 100%; /* Ensures it takes the full width of the viewport */
+    margin: 0; /* Removes any unintended margin */
+    box-sizing: border-box;
+}
+
+.navigate a {
+    margin: 0 10px;
+    text-decoration: none; 
+    font-size:20px;
+    color: black; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.image{
+    width: 115px;
+    height: 70px;
+    margin-left: 100px;
+    margin-right: 15px;
+}
+
+.navigate{
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center; 
+    background-color: #89cff0;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigate a {
+    margin: 0 10px;
+    text-decoration: none; 
+    font-size:20px;
+    color: black; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.logo
+{
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cart-icon
+{
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+    color:#000;
+    display: flex;
+    align-items: center;
+    
+}
+
+#cart-icon .cart-item-count
+{
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+    background: rgb(50, 38, 38);
+    border-radius: 50%;
+    font-size: 12px;
+    color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#cart-icon i {
+    font-size: 30px;
+}
+
+
+h2 
+{
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    font-size: 30px;
+    color: #89cff0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/* box */
+.grid-cointainer
+{
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 3 columns of equal width */
+    grid-gap: 10px; /* Spacing between rows and columns */
+    padding: 10px; /* Optional padding around the grid */
+    justify-items: center; /* Center items horizontally in their cells */
+}
+.containerP
+{
+    overflow: hidden;
+    color: #89cff0;
+    max-width: 300px; /* Set a maximum width for the cards */
+    width: 100%; /* Ensure cards are responsive */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    box-shadow: 0 1px 2px #000000;
+    background-color: #fff;
+}
+
+/*image*/
+.hover-content 
+{
+    position: relative; /* Contain absolutely positioned elements */
+    overflow: hidden; /* Prevent overflow of images */
+}
+
+.hover-content img  
+{
+    display: block; /* Make images block elements */
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.default-image 
+{
+    position: relative; /* Position default image */
+    z-index: 1; /* Ensure it is above the hover image */
+}
+
+.hover-image 
+{
+    position: relative; /* Contain absolutely positioned elements */
+    overflow: hidden; /* Prevent overflow of images */
+    position: absolute; /* Position hover image on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Initially hidden */
+    z-index: 2; /* Ensure it is above the default image */
+}
+
+.item:hover .hover-image 
+{
+    opacity: 1; /* Show hover image on hover */
+}
+
+.item:hover .default-image 
+{
+    opacity: 0; /* Hide default image on hover */
+}
+
+/* down content */
+.down-content p
+{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5%;
+    
+}
+
+
+/* add to cart */
+.price-cart span
+{
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.add-to-cart-btn 
+{
+    padding: 8px 15px;
+    background-color: #89cff0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover 
+{
+    background-color: #fff8dc;
+    color: black;
+}
+
+h4
+{
+    color: #89cff0;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.cart
+{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    box-shadow: #333;
+    padding: 65px 20px 40px;
+    z-index: 100;
+    overflow: auto;
+    transition: 0.5s;
+}
+.cart.active{
+    right: 0;
+}
+
+.cart-title
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+.cart-box
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cart-icon i {
+    font-size: 30px;
+    color: black; 
+}
+
+.cart-box img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-detail
+{
+    display: grid;
+    gap: 8px;
+    margin-right: auto;
+}
+
+.cart-product-title
+{
+    font-size: 16px;
+    line-height: 1;
+}
+
+.cart-price
+{
+    font-weight: 500;
+}
+
+.cart-quantity
+{
+    display: flex;
+    width: 100px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.cart-quantity button
+{
+   background: transparent;
+   width: 30px;
+   border: none;
+   font-size: 20px;
+   cursor: pointer; 
+}
+
+.cart-quantity #decrement
+{
+    color: #999;
+}
+
+.cart-quantity .number
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    cursor: default;
+}
+
+.cart-remove
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.total
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total-title
+{
+    text-align: left;
+}
+
+.total-price
+{
+    margin-left: 10px;
+    text-align: right;
+    color: #89cff0;
+}
+
+.divider
+{
+    margin: 20px 0; /* Space between sections */
+    border: none; /* Remove default border styles */
+    border-top: 1px solid #333; /* Add the top border as a line */ 
+}
+
+.btn-buy
+{
+    background-color: #89cff0;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cart-close
+{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 35px;
+    cursor:pointer;
+
+}
+
+@media (max-width: 768px) {
+    #cart-icon {
+        font-size: 20px;
+    }
+
+    .cart {
+        width: 300px;
+    }
+}
+
+.social-icons2 a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-icons2 a:hover {
+    color: #4B0082;
+}
+
+
+/* Default theme */
+:root {
+    --bg-color: #fff8dc;
+    --text-color: #333;
+    --nav-color: #89cff0;
+    --footer-color: #89cff0;
+    --button-bg-color: #89cff0;
+    --button-text-color: #fff;
+    --cart-quantity-button:white;
+
+/* Deuteranomaly */
+.theme1 {
+    --bg-color: #fff8dc;
+    --text-color: #333;
+    --nav-color: #89cff0;
+    --footer-color: #89cff0;
+    --button-bg-color: #89cff0;
+    --button-text-color: #fff;
+}
+
+/* Monochromacy */
+.theme2 {
+    --bg-color: white;
+    --text-color:black;
+    --nav-color: white;
+    --footer-color: rgb(255, 255, 255);
+    --button-bg-color: blue;
+    --button-text-color: #ffffff;
+    --text-item-color: black;
+    --text-product-color: black;
+    --text-price-color:  black;
+    --text-h4-color: black;
+}
+
+/* Tritanopia */
+.theme3 {
+    --bg-color: #FF0000;
+    --text-color: #FF0000;
+    --nav-color: #FFC0CB;
+    --footer-color: #FFC0CB;
+    --button-bg-color: #FFC0CB;
+    --button-text-color: #fff;
+}
+
+/* Apply variables to elements */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigate {
+    background-color: var(--nav-color);
+    color: var(--text-color);
+}
+
+.navigate a {
+    color: var(--text-color);
+}
+
+.navigate a:hover {
+    color: var(--button-text-color);
+}
+
+.footer {
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+.section h2{
+    color: var(--text-item-color);
+}
+
+.down-content p{
+    color: var(--text-product-color);
+}
+
+.price-cart span{
+    color: var(--text-price-color);
+}
+
+.offer h4{
+    color: var(--text-h4-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Container for the theme and cart icons */
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50%; /* Push the icons to the far right */
+    gap: 20px; /* Space between the icons */
+}
+
+/* Style for the theme icon button */
+.theme-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* Icon color */
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Dropdown wrapper to position the menu correctly */
+.theme-dropdown-wrapper {
+    position: relative; /* Set relative positioning for the parent container */
+} 
+/* Dropdown styles */
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-bar {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+}
+
+#search-input {
+    margin-left: 3%;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #fff8dc;
+}
+
+button i {
+    font-size: 16px; /* Icon size */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

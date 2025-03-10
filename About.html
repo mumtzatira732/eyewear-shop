@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>About Us - miLan</title>
+</head>
+<body>
+    <div class="navigate">
+        <div>
+            <img class="image" src="img/LOGO-ITT588.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="Main.html" >Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About</a>
+        </nav>
+
+        <!-- Icon Container -->
+        <div class="icon-container">
+            <div class="theme-dropdown-wrapper">
+            <!-- Theme Icon Button -->
+            <button class="theme-icon" onclick="toggleDropdown()">
+                <i class="fa fa-paint-brush"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="theme-dropdown" class="dropdown" style="display: none;">
+                <button onclick="applyTheme('theme1')">Deuteranomaly Vision</button>
+                <button onclick="applyTheme('theme2')">Normal Vision</button>
+                <!--<button onclick="applyTheme('theme3')">Tritanopia</button>-->
+            </div>
+        </div>
+    
+            <!-- Cart Icon -->
+            <div id="cart-icon">
+                <i class="ri-shopping-cart-2-line"></i>
+                <div class="cart-item-count">0</div> <!-- Shows the number of items -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class ="team"></div>
+            <div class="about">
+                <span class="title"> About Us </span>
+                <p class="subtitle"> Meet the team behind miLan! </p>
+            </div>
+            <div class="team-container">
+                <div class="team-card">
+                    <img src="img/Lukman.png" alt="Lukman">
+                    <div class="name">MUHAMMAD LUKMAN AL HAKIM BIN MOHD JUNAIDI</div>
+                    <div class="id">Student ID: 2024736337</div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Mumtaz.png" alt="Mumtaz">
+                    <div class="name">MUMTAZ ATHIERA BINTI NORZAN</div>
+                    <div class="id">Student ID: 2024794223</div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Awatif.png" alt="Awatif">
+                    <div class="name">AWATIF NELISA BINTI HASSAN</div>
+                    <div class="id">Student ID: 2024767451</div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Izyani.png" alt="Izyani">
+                    <div class="name">NURUL IZYANI BINTI RAHMAT</div>
+                    <div class="id">Student ID: 2024988669</div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Nadia.png" alt="Nadia">
+                    <div class="name">NADIA MIRZA BINTI RALIM</div>
+                    <div class="id">Student ID: 2022883186</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 miLan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/axiseyewearbaru?igsh=bTBoY3Y3cGRrcndp"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/Script.js"></script>
+</body>
+</html>

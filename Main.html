@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+
+    <title>Home - miLan</title>
+</head>
+<body>
+    <div class="navigate">
+        <div>
+            <img class="image" src="img/LOGO-ITT588.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="Main.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About</a>
+        </nav>
+        
+        <!-- Icon Container -->
+        <div class="icon-container">
+            <div class="theme-dropdown-wrapper">
+            <!-- Theme Icon Button -->
+            <button class="theme-icon" onclick="toggleDropdown()">
+                <i class="fa fa-paint-brush"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="theme-dropdown" class="dropdown" style="display: none;">
+                <button onclick="applyTheme('theme1')">Deuteranomaly Vission</button>
+                <button onclick="applyTheme('theme2')">Normal Vision</button>
+                <!--<button onclick="applyTheme('theme3')">Tritanopia</button>-->
+            </div>
+        </div>
+    
+            <!-- Cart Icon -->
+            <div id="cart-icon">
+                <i class="ri-shopping-cart-2-line"></i>
+                <div class="cart-item-count">0</div> <!-- Shows the number of items -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="fullscreen-image">
+        <img src="img/banner.jpg" alt="Spec">
+    </div>
+
+    <div class="spec-header">
+        <h1>grab before they're gone</h1>
+    </div>
+
+    <div class="spec-container">
+        
+        <a href="Shop.html" class="spec-item">
+            <div class="image-container">
+                <img src="img\s1.jpg" alt="Spec 1 Front" class="front">
+                <img src="img\s1-f.jpg" alt="Spec 1 Back" class="back">
+            </div>
+            <div class="spec-name">Eyesglasses</div>
+        </a>
+        <!-- Spec 2 -->
+        <a href="Shop.html" class="spec-item">
+            <div class="image-container">
+                <img src="img\s5.jpg" alt="Spec 2 Front" class="front">
+                <img src="img\s5-f.jpg" alt="Spec 2 Back" class="back">
+            </div>
+            <div class="spec-name">Black Eyesglasses</div>
+        </a>
+        <!-- Spec 3 -->
+        <a href="Shop.html" class="spec-item">
+            <div class="image-container">
+                <img src="img\s7.jpg" alt="Spec 3 Front" class="front">
+                <img src="img\s7-f.jpg" alt="Spec 3 Back" class="back">
+            </div>
+            <div class="spec-name">Yellow Eyesglasses</div>
+        </a>
+        <!-- Spec 4 -->
+        <a href="Shop.html" class="spec-item">
+            <div class="image-container">
+                <img src="img/s9.png" alt="Spec 4 Front" class="front">
+                <img src="img\s9-f.png" alt="Spec 4 Back" class="back">
+            </div>
+            <div class="spec-name">Sunglasses</div>
+        </a>
+    </div>
+
+    <div class="view-all-container">
+        <a href="Shop.html" class="view-all-button">View All</a>
+    </div>
+
+    <!-- tambah here -->
+    <div class="cart">
+        <div class="cart-title">
+            <h2>Your Cart</h2>
+            <i id="cart-close" class="ri-close-line"></i>
+        </div>
+        <div class="cart-content">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <hr class="divider">
+        <div class="total">
+            <span class="total-title">Total:</span>
+            <span class="total-price">MYR 0.00</span>
+        </div>
+        <hr class="divider">
+        <button class="btn-buy">Buy Now</button>
+    </div>
+
+    <div class="ad-container">
+        <div class="carousel">
+            <div class="slides">
+                <img src="img/a1.jpg" alt="Ad 1">
+                <img src="img/a2.jpg" alt="Ad 2">
+                <img src="img/a3.jpg" alt="Ad 3">
+                <img src="img/a4.jpg" alt="Ad 4">
+                <img src="img/a5.jpg" alt="Ad 5">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="about-us-container">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Milan Eyewear, where innovation meets inclusivity. Our mission is to provide stylish, high-quality eyewear while ensuring our website is accessible and user-friendly for everyone, including individuals with normal vision and those with color vision deficiency, such as deuteranopia.
+        </p>
+        <h3>Our Vision</h3>
+        <p>
+            At Milan Eyewear, we believe in creating a world where everyone can experience clarity and comfort. By incorporating design and technology that cater to diverse needs, we ensure our products and website remain inclusive and easy to navigate for all users.
+        </p>
+        <h3>What We Offer</h3>
+        <ul>
+            <li><strong>Eyewear for Everyone:</strong> A curated collection of fashionable spectacles that combine functionality and style, catering to diverse tastes and preferences.</li>
+            <li><strong>Accessible Website Design:</strong> A thoughtfully designed platform with features to support users with color vision deficiency, ensuring seamless navigation and usability.</li>
+            <li><strong>Commitment to Inclusivity:</strong> We strive to provide an online shopping experience where everyone feels valued and included.</li>
+        </ul>
+        <h3>Our Commitment to You</h3>
+        <p>
+            We are dedicated to ensuring that our website is not only visually engaging but also accessible to users with varying visual capabilities. Whether you’re exploring our collections or learning about our brand, Milan Eyewear is committed to making your online journey enjoyable and inclusive.
+        </p>
+        <h3>Business Operations</h3>
+        <ul>
+            <li><strong>Product Offering and Quality:</strong> A diverse selection of spectacles crafted with premium materials for durability and comfort. Dedicated focus on blending functionality with modern aesthetics.</li>
+            <li><strong>Shipping and Delivery:</strong> Offering reliable shipping services for all eyewear purchases, ensuring timely and safe delivery.</li>
+            <li><strong>Community Engagement:</strong> Raising awareness about inclusivity in digital and physical spaces through campaigns and collaborations. Hosting educational content and resources on color vision deficiency and accessible design.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 miLan. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/__.lukmann/profilecard/?igsh=bTlpcjEzaWNmYzh6"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+    
+    
+
+    <script src="js/Script.js"></script>
+
+</body>
+</html>

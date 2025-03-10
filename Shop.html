@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <!--ni link icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <!--kat sini kena ada logo and shopping cart icon-->
+    <header >
+        <<div class="navigate">
+            <div>
+                <img class="image" src="img/LOGO-ITT588.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="Main.html">Home</a>
+                <a href="Shop.html">Shop</a>
+                <a href="Contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </nav>
+            
+            <!-- Icon Container -->
+            <div class="icon-container">
+                <div class="theme-dropdown-wrapper">
+                <!-- Theme Icon Button -->
+                <button class="theme-icon" onclick="toggleDropdown()">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+    
+                <!-- Dropdown Menu -->
+                <div id="theme-dropdown" class="dropdown" style="display: none;">
+                    <button onclick="applyTheme('theme1')">Deuteranomaly Vision</button>
+                    <button onclick="applyTheme('theme2')">Normal Vision</button>
+                    <!--<button onclick="applyTheme('theme3')">Tritanopia</button>-->
+                </div>
+            </div>
+        
+                <!-- Cart Icon -->
+                <div id="cart-icon">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <div class="cart-item-count">0</div> <!-- Shows the number of items -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <hr class="divider">
+        <div class="price">
+            <div class="total">
+                <div class="total-title">Estimated Total</div>
+                <div class="total-price">0 MYR</div>
+                
+            </div>
+            <hr class="divider">
+            <button class="btn-buy">Buy Now</button>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+    </div>
+
+    <!-- banner 
+    <div class="page-heading" id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>Check Our Products</h2>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <section class="section" id="products">
+        <!-- heading -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 b">
+                    <br></br>
+                    <h2> All Collections </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products..." />
+            <button onclick="searchProducts()">
+                <i class="ri-search-line"></i>
+            </button>
+        </div>
+        
+        <!--SHOP-->
+        <!-- product container -->
+
+        <div class="grid-cointainer"> <!-- product-box-->
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item"> <!--product-content-->
+                            <div class="hover-content"> <!--img-box--> 
+                                <img src="img/s1.jpg" alt="" class="default-image">
+                                <img src="img/s1-f.jpg" alt="" class="hover-image">
+                            </div>
+                                <div class="down-content"> <!--product-title-->
+                                    <p>Onxy HE 5812 Eyesglasses </p>
+                            
+                                    <div class="price-cart">
+                                        <span>98.00 MYR</span>
+                                        <br></br>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s2.jpg" alt="" class="default-image">
+                                <img src="img/s2-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Onxy FT 0177 Eyesglasses</p>
+                            
+                                <div class="price-cart">
+                                    <span>150.00 MYR</span>
+                                    <br></br>
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s3.jpg" alt="" class="default-image">
+                                <img src="img/s3-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Moshita MME77 Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>200.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s4.jpg" alt="" class="default-image">
+                                <img src="img/s4-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Ray Ban 8901A Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>700.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s5.jpg" alt="" class="default-image">
+                                <img src="img/s5-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Eze Clip C3 Black Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>240.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s8.jpg" alt="" class="default-image">
+                                <img src="img/s8-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Eze Clip C4 Black Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>240.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s6.jpg" alt="" class="default-image">
+                                <img src="img/s6-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Eze Clip C3 Yellow Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>240.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s7.jpg" alt="" class="default-image">
+                                <img src="img/s7-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Eze Clip C4 Yellow Eyesglasses</p>
+                                <div class="price-cart">
+                                <span>240.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s9.png" alt="" class="default-image">
+                                <img src="img/s9-f.png" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Ray Ban 4171F Sunglasses </p>
+                                <div class="price-cart">
+                                <span>706.90 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s11.jpg" alt="" class="default-image">
+                                <img src="img/s11-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Jaguar 7554 Sunglasses</p>
+                                <div class="price-cart">
+                                <span> 240.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s10.jpg" alt="" class="default-image">
+                                <img src="img/s10-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Jaguar 8313 Sunglasses</p>
+                                <div class="price-cart">
+                                <span>500.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerP">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="hover-content">
+                                <img src="img/s12.jpg" alt="" class="default-image">
+                                <img src="img/s12-f.jpg" alt="" class="hover-image">
+                            </div>
+                            <div class="down-content">
+                                <p>Ashley Lola JM6209 Sunglasses</p>
+                                <div class="price-cart">
+                                <span>1 063.00 MYR</span>
+                                <br></br>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+   
+    </section>
+    
+    <div class="offer">
+        <h4> never miss out - sign up for updates ♡ </h4>
+    </div>
+    
+
+    <script src="js/shop.js"></script>
+
+    <div class="footer">
+        <p>&copy; 2025 miLan. All rights reserved.</p>
+        <div class="social-icons2">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/axiseyewearbaru?igsh=bTBoY3Y3cGRrcndp"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    
+</body>
+
+</html>
